@@ -3,10 +3,10 @@ header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
 
-$host = getenv('DB_HOST') ?: 'db';
-$db   = getenv('DB_NAME') ?: 'school_db';
-$user = getenv('DB_USER') ?: 'user';
-$pass = getenv('DB_PASS') ?: 'password';
+$host = getenv('MYSQL_HOST') ?: 'db';
+$db   = getenv('MYSQL_DATABASE') ?: 'railway';
+$user = getenv('MYSQL_USER') ?: 'root';
+$pass = getenv('MYSQL_PASSWORD') ?: 'password';
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
