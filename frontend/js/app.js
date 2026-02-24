@@ -1,4 +1,4 @@
-const API_URL = '/api';
+const API_URL = 'https://practica-final-despliegue.onrender.com';
 
 document.addEventListener('DOMContentLoaded', () => {
     loadStudents();
